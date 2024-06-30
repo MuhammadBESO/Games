@@ -1,0 +1,80 @@
+body{
+    background:#272B30;
+    font-family: "Comfortaa";
+}
+.bg-top{
+    max-height: 30vh;
+    object-fit: cover;
+    width: 100%;
+}
+.navbar{
+    background: #3A497B;
+    border-radius: 20px;
+    margin-top: -40px;
+}
+.nav-item .nav-link.active{
+    color: #09c;
+} 
+.nav-item .nav-link{
+    color: white;
+}
+.card{
+    opacity: 0.7;
+transition: 0.3s;
+}
+.card:hover{
+    opacity: 1;
+    transform: scale(1.05);
+}
+.loading {
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background-color: #272b30e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #fff;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: spin 1s linear infinite;
+    position: relative;
+}
+.loader:after{
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-left: 4px solid #ff3d00;
+    border-bottom: 4px solid transparent;
+    animation: spin 0.5s linear infinite reverse;
+
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  ::-webkit-scrollbar {
+    width: 10px; /* Width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #32383E; /* Color of the tracking area */
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: #262A2F; /* Color of the scrollbar */
+    border-radius: 5px; /* Roundness of the scrollbar */
+    height: 60%;
+}
